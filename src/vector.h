@@ -4,11 +4,9 @@
 #include <string>
 #include <math.h>
 
-using namespace std;
-
 class Vector2 {
 public:
-    Vector2(double inx, double iny) {
+    Vector2(double inx = 0, double iny = 0) {
         x = inx;
         y = iny;
     }
@@ -26,7 +24,7 @@ public:
 };
 class Vector3 {
 public:
-    Vector3(double inx, double iny, double inz) {
+    Vector3(double inx = 0, double iny = 0, double inz = 0) {
         x = inx;
         y = iny;
         z = inz;
@@ -45,4 +43,3 @@ public:
         return mid;
     }
 };
-
