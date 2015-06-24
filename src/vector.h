@@ -21,6 +21,9 @@ public:
         Vector2 mid(mx, my);
         return mid;
     }
+    double percentDistance(Vector2 pos, double percentOfDistance = 100) {
+        return distanceTo(pos) / (100 / percentOfDistance);
+    }
 };
 class Vector3 {
 public:
@@ -42,4 +45,6 @@ public:
         Vector3 mid(mx, my, mz);
         return mid;
     }
+    double percentDistance(Vector3 pos, double percentOfDistance = 100) {
+        return distanceTo(pos) / (100 / percentOfDistance);
 };
