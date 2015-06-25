@@ -1,2 +1,2 @@
 # vector-cpp
-A C++ vector library.
+A tiny C++ vector library.
