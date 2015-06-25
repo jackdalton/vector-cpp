@@ -47,4 +47,5 @@ public:
     }
     double percentDistance(Vector3 pos, double percentOfDistance = 100) {
         return distanceTo(pos) / (100 / percentOfDistance);
+    }
 };
