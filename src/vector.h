@@ -15,6 +15,11 @@ public:
     double distanceTo(Vector2 pos) {
         return sqrt((pos.y - y) * (pos.y - y) + (pos.x - x) * (pos.x - x));
     }
+    void vectorMovement(double plusx, double plusy) {
+        x += plusx;
+        y += plusy;
+        return;
+    }
     Vector2 midpoint(Vector2 pos) {
         double mx = (x + pos.x) / 2;
         double my = (y + pos.y) / 2;
@@ -37,6 +42,12 @@ public:
     double z;
     double distanceTo(Vector3 pos) {
         return sqrt((pos.y - y) * (pos.y - y) + (pos.x - x) * (pos.x - x) + (pos.z - z) * (pos.z - z));
+    }
+    void vectorMovement(double plusx, double plusy, double plusz) {
+        x += plusx;
+        y += plusy;
+        z += plusz;
+        return;
     }
     Vector3 midpoint(Vector3 pos) {
         double mx = (x + pos.x) / 2;
